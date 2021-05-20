@@ -36,9 +36,18 @@
                     <div></div>
                 </div>
                 <div class="container--user">
-                    <img src="img/user.svg" alt="">
-                    <div></div>
+                    <a href="#openModal"><img src="img/user.svg" width="20px;" style="float: right;"></a>
+
+                    <div id="openModal" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h2 style="color: white;">Cuenta</h2>
+                            <p style="color: white;">Centro de ayuda</p>
+                            <p style="color: white;">Cerrar Sesión</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </header>
@@ -55,7 +64,30 @@
                     </div>
                     <div class="container--buttons">
                         <button>Reproducir</button>
-                        <button>Más información</button>
+                        <button class="#miModal"><a class="btn-color-white" href="#miModal">Más Información</a></button>
+                        <div id="miModal" class="modal">
+                            <div class="modal-contenido">
+                                <div class="head-modal">
+                                    <a class="btn-cerrar" href="#">X</a>
+                                    <h1>Dark</h1>
+                                </div>
+                                <video src="trailer.mp4" autoplay loop muted></video>
+                                <button>Reproducir</button>
+                                <div class="content-text-modal">
+                                    <div class="text">
+                                        <p>Duracion: 1h 30min</p>
+                                        <p>Año de estreno: 1999</p>
+                                        <p>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                                            officiis ex deserunt quam iste deleniti?</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>Actores: Jair de jesus, Emanuel lozano</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
