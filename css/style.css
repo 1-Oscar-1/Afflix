@@ -418,3 +418,34 @@ video {
 .close:hover {
   background: #db202c;
 }
+.btn-close{
+  width: 70px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.btn-close:hover{
+  opacity: 1;
+}
+.btn-close a{
+  color: white;
+  background-color: #414141;
+  padding: 8px 19px;
+  border-radius: 50%;
+  font-size: 30px;
+  text-decoration: none;
+}
+.container-video-reproductor{
+  height: 100vh;
+  margin: 0 auto;
+}
+.container-video-reproductor video{
+  height: 100%;
+}
